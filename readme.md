@@ -26,12 +26,12 @@ php artisan serve // by default app link will be <http://127.0.0.1:8000/>
 
 php artisan migrate
 
-Notes:response can be updated to json instead of returning views(in app\Http\Controllers\ComplaintsController.php) as sample below:
-
+Notes:
+1. response can be updated to json instead of returning views(in app\Http\Controllers\ComplaintsController.php) as sample below:
 return response()->json($complaint, 201);
 
 
-Database config can be changed from .env file, below is the default params:
+2.Database config can be changed from .env file, below is the default params:
 
 //Below Database config default :
 
@@ -50,6 +50,6 @@ DB\_USERNAME=root
 DB\_PASSWORD=
 
 
-To update user account to Admin account, change is_admin flag in users table to 1, in this case admin will be able to change complain status.
-
+3. To update user account to Admin account, change is_admin flag in users table to 1, in this case admin will be able to change complain status.
+4. to activate forget password email, SMTP configurations should be updated inside .env file first.
 
