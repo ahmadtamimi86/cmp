@@ -50,4 +50,6 @@ DB\_USERNAME=root
 DB\_PASSWORD=
 
 
+To update user account to Admin account, change is_admin flag in users table to 1, in this case admin will be able to change complain status.
+
 
