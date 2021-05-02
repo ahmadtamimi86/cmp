@@ -2,8 +2,7 @@
 
 [**Server Requirements**](https://laravel.com/docs/7.x#server-requirements)
 
-The Laravel framework has a few system requirements. All of these requirements are satisfied by laragon virtual machine(https://laragon.org/download/), so it's highly recommended that you use laragon  as your local Laravel development environment.
-
+The Laravel framework has a few system requirements. All of these requirements are satisfied by laragon virtual machine(https://laragon.org/download/).
 However, if you are not using laragon, you will need to make sure your server(wamp,xamp…etc) meets the following requirements:
 
 - PHP >= 7.2.5
@@ -18,13 +17,16 @@ However, if you are not using laragon, you will need to make sure your server(wa
 - XML PHP Extension
 - Composer
 
-Below commands should be executed in sequence inside laragon terminal(or any other virtual server), and locate project root directory,  to run application and migrate needed tables, after you clone project
+once Development enviroment is ready to run laravel application please make sure to execute below commands inside created project folder: 
 
-Commands:
 
-php artisan serve // by default app link will be <http://127.0.0.1:8000/>
-
+git clone https://github.com/ahmadtamimi86/cmp.git
+composer install
+php artisan serve
 php artisan migrate
+
+
+
 
 Notes:
 1. response can be updated to json instead of returning views(in app\Http\Controllers\ComplaintsController.php) as sample below:
