@@ -20,10 +20,10 @@ However, if you are not using laragon, you will need to make sure your server(wa
 once Development enviroment is ready to run laravel application please make sure to execute below commands inside created project folder: 
 
 
-git clone https://github.com/ahmadtamimi86/cmp.git
-composer install
-php artisan serve
-php artisan migrate
+git clone https://github.com/ahmadtamimi86/cmp.git <br/>
+composer install <br/>
+php artisan serve <br/>
+php artisan migrate <br/>
 
 
 
