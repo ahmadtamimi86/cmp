@@ -9,8 +9,10 @@
 <div class="card card-default">
     <div class="card-header">
         <span>Complaints</span>
+        @if(!$is_admin)
             <a href="{{route('complaints.create')}}" class="btn btn-success btn-sm" style="float:right" title="Add New Complaint">Add New Complains</a>
-    </div>
+        @endif
+        </div>
     <div class="card-body"></div>
         <div class="card-body">
             <table class="table">
