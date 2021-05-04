@@ -18,7 +18,7 @@
             <table class="table">
                 <head>
                     <th>Title</th>
-                    <th>Description</th>
+                    
                     <th>Status</th>
                     <th>Creation Time</th>
                 </head>
@@ -27,7 +27,7 @@
                     @foreach($complaints as $complaint)
                         <tr>
                             <td>{{$complaint->title}}</td>
-                            <td>{{$complaint->description}}</td>
+                           
                             <td>{{$complaint->status}}</td>
                             <td>{{$complaint->created_at}}</td>
                             @if($is_admin)
